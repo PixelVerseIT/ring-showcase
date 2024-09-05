@@ -39,24 +39,6 @@
             transform: translateY(0);
         }
 
-        #ring-image-container {
-            width: 100%;
-            height: 400px;
-            /* Adjust as needed */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #ring-image {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 10px;
-            /* Optional: Add rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* Optional: Add a subtle shadow */
-        }
-
         .hexagon {
             width: 200px;
             height: 173.2px;
@@ -76,6 +58,13 @@
         .hexagon img:hover {
             transform: scale(1.1);
         }
+
+        #ring-image{
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -85,7 +74,7 @@
             <li><a href="#home" class="hover:text-yellow-300 transition duration-300">Home</a></li>
             <li><a href="#design-process" class="hover:text-yellow-300 transition duration-300">Design Process</a></li>
             <li><a href="#gallery" class="hover:text-yellow-300 transition duration-300">Gallery</a></li>
-            <li><a href="#about" class="hover:text-yellow-300 transition duration-300">About</a></li>
+            <li><a href="#about" class="hover:text-yellow-300 transition duration-300">Blurb</a></li>
         </ul>
     </nav>
 
@@ -98,7 +87,7 @@
             </h1>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div id="ring-image-container" class="animate-on-scroll">
-                    <img id="ring-image" src="ring_image.png" alt="Ring Design">
+                    <img id="ring-image" src="hero.png" alt="Ring Design">
                 </div>
                 <div
                     class="bg-white p-8 rounded-lg shadow-lg transform hover:-rotate-2 transition duration-300 animate-on-scroll">
@@ -107,7 +96,7 @@
                         Discover the art of modern ring design through this showcase, highlighting the creative journey
                         and technical skills developed in my Year 8 design tech class.
                     </p>
-                    <a href="#design-process"
+                    <a href="#design-proces" onclick="showPage('#design-process')"
                         class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:from-pink-500 hover:to-purple-500 transition duration-300 inline-block">
                         Explore the Creative Process
                     </a>
@@ -155,30 +144,35 @@
                 <section class="animate-on-scroll">
                     <h2 class="text-3xl font-semibold mb-6 text-pink-500">3. Renders</h2>
                     <div class="grid grid-cols-2 gap-8">
-                        <img src="/renders/render1.png" alt="Final Sketch 1"
-                            class="w-full h-80 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="/renders/render2.png" alt="Final Sketch 2"
-                            class="w-full h-80 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="vizcom1.png" alt="Final Sketch 1"
+                            class="w-full h-120 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="vizcom2.png" alt="Final Sketch 2"
+                            class="w-full h-120 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     </div>
                 </section>
                 <section class="bg-white p-8 rounded-lg shadow-lg animate-on-scroll">
                     <h2 class="text-3xl font-semibold mb-6 text-purple-600">4. Fusion Technical Drawing</h2>
-                    <div class="grid grid-cols-2 gap-8">
-                        <img src="/technical_drawings/drawing1.png" alt="Final Sketch 1"
-                            class="w-full h-80 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="/technical_drawings/drawing2.png" alt="Final Sketch 2"
-                            class="w-full h-80 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="grid grid-cols-4 gap-8">
+                        <img src="drawing1.png" alt="Technical Drawing 1"
+                            class="w-full object-contain rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="drawing2.png" alt="Technical Drawing 2"
+                            class="w-full object-contain rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="drawing3.png" alt="Technical Drawing 3"
+                            class="w-full object-contain rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="drawing4.png" alt="Technical Drawing 4"
+                            class="w-full object-contain rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     </div>
+                </section>
                 </section>
                 <section class="animate-on-scroll">
                     <h2 class="text-3xl font-semibold mb-6 text-pink-500">5. Fusion Renders</h2>
                     <div class="grid grid-cols-3 gap-6">
-                        <img src="/fusion_renders/fusion_render1.png" alt="3D Model 1"
-                            class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="/fusion_renders/fusion_render2.png" alt="3D Model 2"
-                            class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="/fusion_renders/fusion_render3.png" alt="3D Model 3"
-                            class="w-full h-64 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="render1.png" alt="3D Model 1"
+                            class="w-full h-120 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="render2-final.png" alt="3D Model 2"
+                            class="w-full h-120 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="render3.png" alt="3D Model 3"
+                            class="w-full h-120 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     </div>
                 </section>
             </div>
@@ -219,29 +213,30 @@
 
     <div id="about" class="page pt-16">
         <div class="container mx-auto px-4 py-12">
-            <h1 class="text-5xl font-bold mb-12 text-center text-purple-600 animate-on-scroll">About the Project</h1>
+            <h1 class="text-5xl font-bold mb-12 text-center text-purple-600 animate-on-scroll">Blurb</h1>
             <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto animate-on-scroll">
                 <p class="text-gray-700 leading-relaxed mb-6">
-                    This modern ring design project is a creative exploration undertaken as part of my Year 8 design
-                    tech class. The goal was to push the boundaries of conventional jewelry design, creating a unique
-                    and contemporary ring that seamlessly blends aesthetics with functionality.
+                    Introducing <b>The Triangle Ring</b> – a striking and modern piece of jewelry inspired by geometric shapes,
+                    particularly the power and balance of the triangle. This design reflects simplicity and strength, making it perfect
+                    for those who appreciate minimalist yet bold fashion. The ring features a sleek black band with a prominent gold
+                    triangle on top, offering a clean, sharp look.
                 </p>
+
                 <p class="text-gray-700 leading-relaxed mb-6">
-                    Throughout this journey, I've honed my skills in various areas:
+                    For this project, I selected stainless steel for the band on Shapeways due to its recyclable and durable nature,
+                    making it an eco-friendly choice. The triangle, in gold-plated brass, adds a touch of elegance while also being a
+                    sustainable option. By choosing these materials, the ring not only looks great but also aligns with environmentally
+                    responsible practices by reducing material waste and supporting recycling.
                 </p>
-                <ul class="list-disc list-inside text-gray-700 mb-6">
-                    <li>Design thinking and conceptualization</li>
-                    <li>Sketching and visual communication</li>
-                    <li>3D modeling and digital rendering</li>
-                    <li>Understanding of jewelry design principles</li>
-                    <li>Awareness of sustainable practices in manufacturing</li>
-                </ul>
+
                 <p class="text-gray-700 leading-relaxed">
-                    The final design features a twisted band that symbolizes life's intricate journey, complemented by
-                    an ethically sourced diamond as the centerpiece. By incorporating recycled gold, this piece not only
-                    captivates with its beauty but also aligns with sustainable jewelry practices, embodying a
-                    harmonious blend of aesthetics and responsibility.
+                    This ring is aimed at <b>teenagers and young adults</b> who have a love for modern, edgy style. With its minimalist
+                    appeal and sustainable materials, it’s perfect for individuals who want to express their unique style while being
+                    conscious of the environment.
                 </p>
+
+                <p class="text-gray-500 text-sm mt-4">© 2024 Hayden Kong. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Source code open-source on <a style="color: blue;"" href="https://github.com/PixelVerseIT/ring-showcase">GitHub</a></p>
             </div>
         </div>
     </div>
