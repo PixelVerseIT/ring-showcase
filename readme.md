@@ -7,4 +7,4 @@ To deploy this website locally, download this repo as a .zip and open index.html
 
 [![Deploy Ring Showcase on Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPixelVerseIT%2Fring-showcase)
 
-Only for educational purposes. MIT License.
+Copyright 2024 Hayden Kong. MIT License.
