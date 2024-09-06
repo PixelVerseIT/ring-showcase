@@ -75,6 +75,7 @@
             <li><a href="#design-process" class="hover:text-yellow-300 transition duration-300">Design Process</a></li>
             <li><a href="#gallery" class="hover:text-yellow-300 transition duration-300">Gallery</a></li>
             <li><a href="#about" class="hover:text-yellow-300 transition duration-300">Blurb</a></li>
+            <li><a href="#print" class="hover:text-yellow-300 transition duration-300">Manufactor</a></li>
         </ul>
     </nav>
 
@@ -93,10 +94,10 @@
                     class="bg-white p-8 rounded-lg shadow-lg transform hover:-rotate-2 transition duration-300 animate-on-scroll">
                     <h2 class="text-3xl font-semibold mb-5 text-purple-600">Year 8 Ring Design Tech Portfolio</h2>
                     <p class="text-gray-700 leading-relaxed mb-6">
-                        Discover the art of modern ring design through this showcase, highlighting the creative journey
-                        and technical skills developed in my Year 8 design tech class.
+                        Meet the triangle ring – a modern and stylish piece of jewelry designed for teenagers and young adults who
+                        appreciate minimalist fashion. Explore the design process and creative journey behind this unique ring.
                     </p>
-                    <a href="#design-proces" onclick="showPage('#design-process')"
+                    <a href="https://designtechring.pixelverse.tech/#gallery" onclick="showPage('#design-process')"
                         class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:from-pink-500 hover:to-purple-500 transition duration-300 inline-block">
                         Explore the Creative Process
                     </a>
@@ -181,32 +182,26 @@
 
     <div id="gallery" class="page pt-16">
         <div class="container mx-auto px-4 py-12">
-            <h1 class="text-5xl font-bold mb-12 text-center text-purple-600 animate-on-scroll">Gallery</h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="hexagon overflow-hidden animate-on-scroll">
-                    <img src="/gallery/gallery1.png" alt="Ring 1"
-                        class="w-full h-64 object-cover hover:scale-110 transition duration-300">
-                </div>
-                <div class="hexagon overflow-hidden animate-on-scroll">
-                    <img src="/gallery/gallery2.png" alt="Ring 2"
-                        class="w-full h-64 object-cover hover:scale-110 transition duration-300">
-                </div>
-                <div class="hexagon overflow-hidden animate-on-scroll">
-                    <img src="/gallery/gallery3.png" alt="Ring 3"
-                        class="w-full h-64 object-cover hover:scale-110 transition duration-300">
-                </div>
-                <div class="hexagon overflow-hidden animate-on-scroll">
-                    <img src="/gallery/gallery4.png" alt="Ring 4"
-                        class="w-full h-64 object-cover hover:scale-110 transition duration-300">
-                </div>
-                <div class="hexagon overflow-hidden animate-on-scroll">
-                    <img src="/gallery/gallery5.png" alt="Ring 5"
-                        class="w-full h-64 object-cover hover:scale-110 transition duration-300">
-                </div>
-                <div class="hexagon overflow-hidden animate-on-scroll">
-                    <img src="/gallery/gallery6.png" alt="Ring 6"
-                        class="w-full h-64 object-cover hover:scale-110 transition duration-300">
-                </div>
+            <h1 class="text-5xl font-bold mb-10 text-center text-purple-600 animate-on-scroll">Gallery</h1>
+            <div class="grid grid-cols-3 gap-4">
+                <img src="/gallery/thumbnail_IMG_5895.jpg" alt="Moodboard 1"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="/gallery/thumbnail_IMG_5896.jpg" alt="Moodboard 2"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="/gallery/thumbnail_IMG_5897.jpg" alt="Moodboard 3"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="render1.png" alt="Moodboard 4"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="/gallery/thumbnail_IMG_5898.jpg" alt="Moodboard 5"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="render3.png" alt="Moodboard 6"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="vizcom1.png" alt="Moodboard 7"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="/drawing4.png" alt="Moodboard 8"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="/drawing1.png" alt="Moodboard 9"
+                    class="w-full h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300">
             </div>
         </div>
     </div>
@@ -236,6 +231,37 @@
                 </p>
 
                 <p class="text-gray-500 text-sm mt-4">© 2024 Hayden Kong. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Source code open-source on <a style="color: blue;"" href="https://github.com/PixelVerseIT/ring-showcase">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="print" class="page pt-16"></div>
+        <div class="container mx-auto px-4 py-12">
+            <h1 class="text-5xl font-bold mb-12 text-center text-purple-600 animate-on-scroll">3D Print this Ring</h1>
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto animate-on-scroll">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    The triangle ring is a modern and stylish piece of jewelry designed for teenagers and young adults who appreciate
+                    minimalist fashion. You can now experience this unique design in real life by 3D printing it. Simply download the
+                    3D model files below and send them to your local 3D printing service or use your own 3D printer to create your very
+                    own triangle ring.
+                </p>
+
+                <!-- image with rounded conrers -->
+                <img src="3d-1.png" alt="3D Model" class="rounded-lg shadow-md hover:shadow-xl transition duration-300" id="ring-image" style="padding: 1px;">
+
+                <div class="flex justify-center space-x-4 mt-8">
+                    <a href="ring.stl" download
+                        class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:from-pink-500 hover:to-purple-500 transition duration-300 inline-block">
+                        Download STL File
+                    </a>
+                    <a href="https://makerworld.com/en" target="_blank"
+                        class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:from-pink-500 hover:to-purple-500 transition duration-300 inline-block">
+                        View on MakerWorld
+                    </a>
+                </div>
+
+                <p class="text-gray-500 text-sm mt-10">© 2024 Hayden Kong. All rights reserved.</p>
                 <p class="text-gray-500 text-sm">Source code open-source on <a style="color: blue;"" href="https://github.com/PixelVerseIT/ring-showcase">GitHub</a></p>
             </div>
         </div>
